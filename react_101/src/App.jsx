@@ -1,3 +1,5 @@
+import CustomButton from "./components/CustomButton";
+import Employee from "./components/Employee";
 import Student from "./components/Student";
 import Teacher from "./components/Teacher";
 
@@ -11,6 +13,8 @@ function App(){
   let d = null;
   let e = "undefined";
   let array = [10,20,30,40,50];
+
+  
   return (
        <div>{ 
         
@@ -31,6 +35,8 @@ function App(){
          <Teacher />
          <Student />
          <Student />
+         <Employee name="labib" position="developer"/>
+         <CustomButton color="red"/>
        </div>
   );
 }
