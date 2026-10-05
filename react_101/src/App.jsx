@@ -1,5 +1,6 @@
 import CustomButton from "./components/CustomButton";
 import Employee from "./components/Employee";
+import Item from "./components/Item";
 import Student from "./components/Student";
 import Teacher from "./components/Teacher";
 
@@ -13,6 +14,7 @@ function App(){
   let d = null;
   let e = "undefined";
   let array = [10,20,30,40,50];
+  let array2 = ["labib","shuvo","sabbir","shakil"];
 
   
   return (
@@ -37,6 +39,10 @@ function App(){
          <Student />
          <Employee name="labib" position="developer"/>
          <CustomButton color="red"/>
+         <Item Item = {array2}/>
+
+
+         <h1 className="text-green-800">Tailwind test</h1>
        </div>
   );
 }
