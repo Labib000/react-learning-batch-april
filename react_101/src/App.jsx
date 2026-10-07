@@ -1,3 +1,4 @@
+import Card from "./components/Card";
 import CustomButton from "./components/CustomButton";
 import Employee from "./components/Employee";
 import Item from "./components/Item";
@@ -42,7 +43,9 @@ function App(){
          <Item Item = {array2}/>
 
 
-         <h1 className="text-green-800">Tailwind test</h1>
+         <h1 className="bg-amber-950 text-green-800 p-4 rounded-r-xl inline-block bg-center">Tailwind test</h1>
+          <Card userName="labib" />
+
        </div>
   );
 }
