@@ -4,6 +4,7 @@ import Employee from "./components/Employee";
 import Item from "./components/Item";
 import Student from "./components/Student";
 import Teacher from "./components/Teacher";
+import { useState } from "react";
 
 
 function App(){
@@ -17,9 +18,19 @@ function App(){
   let array = [10,20,30,40,50];
   let array2 = ["labib","shuvo","sabbir","shakil"];
 
+  const [counter,setCounter] = useState(15);
+
+  const addValue = () => {
+    setCounter(counter + 1);
+  }
+
+  const subValue = () => {
+    setCounter(counter - 1);
+  }
+
   
   return (
-       <div>{ 
+       <div className="grid place-items-center h-screen">{ 
         
         array.map((value,index)=>{
              return (<h1>{index}:{value}</h1>)
@@ -45,6 +56,14 @@ function App(){
 
          <h1 className="bg-amber-950 text-green-800 p-4 rounded-r-xl inline-block bg-center">Tailwind test</h1>
           <Card userName="labib" />
+
+        <button onClick={addValue} className="bg-green-500 p-4 rounded-lg m-2">Add</button>
+        <button onClick={subValue} className="bg-red-500 p-4 rounded-lg m-2">Sub</button>
+        <h1>{counter}</h1>
+
+
+
+
 
        </div>
   );
