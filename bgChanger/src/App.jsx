@@ -28,3 +28,6 @@ function App() {
 }
 
 export default App
+
+
+//with onclick function always use arrow function or callback function becuase onclick expects a function not a value. if you use normal function it will be called immediately when the component renders. so to avoid that we use arrow function or callback function.
