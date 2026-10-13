@@ -20,6 +20,8 @@ function App(){
 
   const [counter,setCounter] = useState(15);
 
+  const [name, setName] = useState("Labib");
+
   const addValue = () => {
     setCounter(counter + 1);
   }
@@ -62,6 +64,10 @@ function App(){
         <h1>{counter}</h1>
 
 
+        <h1 className="bg-amber-950 text-green-800 p-4 rounded-r-xl inline-block bg-center">{name}</h1>
+        <button  onClick={() => setName("anonymous")} className="bg-green-500 p-4 rounded-lg m-2">Change Name</button>
+
+
 
 
 
@@ -74,4 +80,9 @@ export default App;
 // every evaluation (js) stays in the curly bracket
 // only printing a and b for c and d we have stringify it by default it will not show 
 // afte json.stringify it will still not print undefined for undefined wwe have to make it a string  at the  time of declaration
-// for looping the array in react we can use map function and we have to return the value in the map function and we can use index as well as value in the map function, for loop etc will not work her 
+// for looping the array in react we can use map function and we have to return the value in the map function and we can use index as well as value in the map function, for loop etc will not work here
+//Hooks are prebuild components in react which are used to manage the state of the component, useState is a hook which is used to manage the state of the component, useState returns an array with two values, first value is the current state and second value is a function which is used to update the state, we can use useState hook only inside a functional component, we can not use it inside a class component, we can not use it outside a component, we can not use it inside a loop, we can not use it inside a condition, we can not use it inside a nested function, we can not use it inside a callback function, we can not use it inside a promise, we can not use it inside an async function, we can not use it inside a setTimeout or setInterval function
+//Functional components = static changes 
+//Class components = dynamic changes
+//Functional Components + Hooks = dynamic changes 
+//useState () = > this hook causes re render/recreatiing the components 
