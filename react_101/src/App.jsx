@@ -23,11 +23,18 @@ function App(){
   const [name, setName] = useState("Labib");
 
   const addValue = () => {
-    setCounter(counter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   }
 
   const subValue = () => {
-    setCounter(counter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
   }
 
   
