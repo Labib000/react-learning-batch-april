@@ -1,7 +1,9 @@
+import ApiCalling from "./components/ApiCalling";
 import Card from "./components/Card";
 import CustomButton from "./components/CustomButton";
 import Employee from "./components/Employee";
 import Item from "./components/Item";
+import Random from "./components/Random";
 import Student from "./components/Student";
 import Teacher from "./components/Teacher";
 import { useState } from "react";
@@ -73,6 +75,10 @@ function App(){
 
         <h1 className="bg-amber-950 text-green-800 p-4 rounded-r-xl inline-block bg-center">{name}</h1>
         <button  onClick={() => setName("anonymous")} className="bg-green-500 p-4 rounded-lg m-2">Change Name</button>
+
+
+        <Random />
+        <ApiCalling />
 
 
 
