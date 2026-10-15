@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function ApiCalling() {
 
@@ -9,9 +10,8 @@ function ApiCalling() {
     useEffect(() => {
 
          const API = "https://jsonplaceholder.typicode.com/posts";
-         fetch(API)
-            .then(data => data.json())
-            .then(response => setData(response))
+         axios.get(API)
+            .then(response => setData(response.data))
             .catch(error => console.log(error))
 
 
